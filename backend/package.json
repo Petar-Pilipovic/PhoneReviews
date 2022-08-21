@@ -1,0 +1,16 @@
+{
+    "name": "html-package",
+    "version": "2.4.0",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "generate-schema": "^2.6.0",
+        "mongodb": "^3.6.6",
+        "mongoose": "^5.12.7",
+        "nodemon": "^2.0.7"
+    }
+}

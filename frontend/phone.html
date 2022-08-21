@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/myjs.js"></script>
+		<title id = "titleJS"></title>
+		<style>		
+			th {
+			  text-align: left;
+			  padding: 8px;
+			  width: 25%;
+			}
+		</style>
+	</head>
+	<body>
+	<header>
+		<nav class="navbar navbar-expand navbar-light bg-light">
+			<img src="https://www.vhv.rs/file/max/26/264390_mobile-clipart-png.png" width="30" height="30" class="d-inline-block align-top img-fluid" alt="phone-icon">
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Phones
+					</a>
+					<div id = "navbarJS" class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+					</div>
+				  </li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<div class = "fluid-container">
+		<div class="row" id = "basicInfo">
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="accordion" id="myAccordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+						  <h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							  <big>Specifications</big>
+							</button>
+						  </h5>
+						</div>
+
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
+							<div class="card-body" id = "tableJS">
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<big>Review</big>
+								</button>
+							</h5>
+						</div>
+						
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+							
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<big>Comments</big>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#myAccordion">
+							<div class="card-body">
+								<h2>
+									<img id="sortImg" value="Sort" src="./images/sortNone.png" height="22" onclick="changeSort()"/> Comment section
+								</h2>
+								<br/>
+								<div id = "commentSection">
+									
+								</div>
+								
+								</br>								
+								<h2>Leave a review:</h2>
+								<form action="phone.html" id="comment-review">
+									<label for="rname">Title:</label>
+									<input class="col-md-6 form-control" type="text" id="rtext" name="rtext" placeholder="Enter Title..."></br></br>
+									<div class = "form-group">
+										<textarea class = "form-control" id="userReview" name="userReview" rows="4" cols="60" placeholder="Type your review here and then press 'Submit'."></textarea>
+									</div></br>
+									<label for="review">Choose a rating:</label>
+									
+									<select name="review" id="review">
+										<option value=1>1</option>
+										<option value=2>2</option>
+										<option value=3>3</option>
+										<option value=4>4</option>
+										<option value=5>5</option>
+									</select>
+									</br></br>
+									<input type="submit" value="Submit" class="btn btn-success">
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class ="bg-grey-xlight text-center">
+			<small>&copy; 2021, Petar Pilipovic</small>
+		</div>
+	</footer>
+	</body>
+</html>

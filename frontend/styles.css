@@ -1,0 +1,87 @@
+.my-table {
+	border-collapse: collapse;
+}
+
+.display-table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}	
+
+.chip {
+	display: inline-block;
+	padding: 0 25px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	border-radius: 25px;
+	background-color: #f1f1f1;
+}
+
+.chip img {
+	float: left;
+	margin: 0 10px 0 -25px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.large-stars {
+	padding-left:40px;
+}
+
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.comment-b {
+	padding: 15px 15px 10px 15px;
+	color: white;
+	background-color:#ababa1;
+}
+
+.comment-b:nth-child(even) {
+	background-color: white;
+	color: black;
+}
+
+.comment-reactions {
+	float: left;
+}
+
+.no-comments {
+	color:gray;
+	font-style:italic;
+}
+
+.my-list {
+	list-style-type:none;
+	font-size:18px;
+}
+
+.red {
+	color:red;
+}
+
+.green {
+	color:green;
+}
+
+.orange {
+	color:orange;
+}
+
+.my-form {
+	padding-right:12px;
+}
+
+.my-iframe-container {
+	padding-top:75%;
+}
