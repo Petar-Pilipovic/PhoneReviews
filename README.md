@@ -10,7 +10,7 @@ The website uses MongoDB as its database. You may install it [here](https://www.
 2. Run `node init.js` from `./backend` to preload a test database.
 3. Setup MongoDB either via console (`mongod`) or using MongoDBCompass.
 4. Run the server using `node app.js` from `./backend` to setup routes.
-5. The server is now running. You may access it via `./frontened/index.html`.
+5. The server is now running. You may access it via `./frontend/index.html`.
 
 ## Features
 
